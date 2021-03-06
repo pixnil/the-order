@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sellers",
+  "info": {
+    "name": "Seller"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}
