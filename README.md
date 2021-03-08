@@ -1,23 +1,14 @@
-# Strapi Starter Next.js E-commerce
+# Order Online Sample Demo Project
 
-Next.js starter for creating a simple e-commerce website with Strapi.
+Next.js framework for frontend
+Strapi for Backend API (CMS)
+ReactJs app for Admin panel for products management
+
+Once you run backend project on local then front end should look like below:
 
 ![screenshot image](screenshot.png)
 
-This starter allows you to try Strapi with Next.js with the example of a simple e-commerce website where you can buy dev stickers. It is fully customizable and due to the fact that it is open source, fully open to contributions. So do not hesitate to add new features and report bugs!
-
-## Features
-
-- 1 Component
-- 2 Collection types: Product, Category
-- 27 Created products
-- 6 Created categories
-- Permissions set to `true` for product and category
-- Responsive design using Tailwind css
-- Slug system
-- Publication system (draft & published)
-- Role based access controls
-- Payments handled with Snipcart
+This starter allows you to try Strapi with Next.js with the example of a simple e-commerce website where you can buy products.
 
 ## Getting started
 
@@ -49,7 +40,6 @@ Then install dependencies and start the server:
 # Using npm
 npm install
 npm run dev
-
 ```
 
 The Next.js server will run here => [http://localhost:3000](http://localhost:3000)
