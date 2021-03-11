@@ -20,7 +20,7 @@ Move to backend folder and run below commands
 # Using NPM
 npm install
 npm run build
-npm run dev (To start backend server locally)
+npm run develop (To start backend server locally)
 
 ```
 
