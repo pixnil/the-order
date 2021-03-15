@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/08/2021 10:18:19 PM"
+    "x-generation-date": "03/15/2021 1:54:22 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3996,7 +3996,9 @@
       },
       "Seller": {
         "required": [
-          "id"
+          "id",
+          "whatsappNumber",
+          "sellerId"
         ],
         "properties": {
           "id": {
@@ -4005,7 +4007,86 @@
           "name": {
             "type": "string"
           },
-          "slug": {
+          "logo": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "isPublished": {
+            "type": "boolean"
+          },
+          "orderEmail": {
+            "type": "string"
+          },
+          "whatsappNumber": {
+            "type": "integer"
+          },
+          "sellerId": {
             "type": "uid"
           },
           "published_at": {
@@ -4015,11 +4096,27 @@
         }
       },
       "NewSeller": {
+        "required": [
+          "whatsappNumber",
+          "sellerId"
+        ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "slug": {
+          "description": {
+            "type": "string"
+          },
+          "isPublished": {
+            "type": "boolean"
+          },
+          "orderEmail": {
+            "type": "string"
+          },
+          "whatsappNumber": {
+            "type": "integer"
+          },
+          "sellerId": {
             "type": "uid"
           },
           "published_at": {
