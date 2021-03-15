@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "order-api",
+    "builds": [
+      {
+        "src": "build/main.js",
+        "use": "@now/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "build/main.js"
+      }
+    ]
+  }
