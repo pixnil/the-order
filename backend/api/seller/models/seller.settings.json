@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "sellers",
   "info": {
-    "name": "Seller"
+    "name": "Seller",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,9 +14,33 @@
     "name": {
       "type": "string"
     },
-    "slug": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isPublished": {
+      "type": "boolean"
+    },
+    "orderEmail": {
+      "type": "email"
+    },
+    "whatsappNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "sellerId": {
       "type": "uid",
-      "targetField": "name"
+      "required": true
     }
   }
 }
